@@ -1,8 +1,12 @@
 call plug#begin('~/.vim/plugged')
     Plug 'https://github.com/vim-syntastic/syntastic.git'
+    Plug 'sheerun/vim-polyglot'
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
+    Plug 'conornewton/vim-pandoc-markdown-preview'
 call plug#end()
 
-" Syntastic recommended settings
+"Syntastic recommended settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -192,7 +196,8 @@ set noswapfile
 set expandtab
 
 " enable linenumbers 
-set relativenumber
+set number
+"set relativenumber
 
 " Be smart when using tabs ;)
 set smarttab
